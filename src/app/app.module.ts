@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { ProductRowComponent } from './product-row/product-row.component';
 import { ProductImageComponent } from './product-image/product-image.component';
 import { ProductDepartmentComponent } from './product-department/product-department.component';
 import { PriceDisplayComponent } from './price-display/price-display.component';
+import { DemoFormComponent } from './demo-form/demo-form.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +28,13 @@ import { PriceDisplayComponent } from './price-display/price-display.component';
     ProductRowComponent,
     ProductImageComponent,
     ProductDepartmentComponent,
-    PriceDisplayComponent
+    PriceDisplayComponent,
+    DemoFormComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [],
